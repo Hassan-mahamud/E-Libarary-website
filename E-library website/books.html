@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="books.css">
+    <script src="main.js" defer></script>
+</head>
+
+
+
+    
+
+
+<body>
+
+
+
+<!-- 
+    <div class="head-intro">
+        <header>
+            <div class="logo">
+                <h1>#Logo</h1>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Trending Books</a></li>
+                    <li><a href="#">Catagoreis</a></li>
+                    <li><a href="#">All Books</a></li>
+                    <li><a href="#" class="btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+ -->
+
+    <div class="intro">
+        <div class="search">
+
+          <img src="./books/DreamShaper_v7_two_boy_using_computer_coding_0.jpg" alt="">
+
+          <h1>Search Book You're Looking for</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates amet perferendis quisquam aut exercitationem voluptate explicabo veniam voluptatibus maiores officia?</p>
+
+            <div class="search-bar">
+                <!-- <input type="text" id="search-input" placeholder="Search books...">
+                <button onclick="searchBooks()">Search</button> -->
+                <input type="text" id="searchInput" placeholder="Search Books...">
+                <button onclick="searchDiv()">Search</button>
+            </div>
+
+
+          <div class="trigger-buttons">
+            <button onclick="searchButton1()">Taariikh</button>
+            <button onclick="searchButton2()">Jacayl</button>
+            <button onclick="searchButton3()">Sheeko</button>
+            <button onclick="searchButton4()">Islamic</button>
+            <button onclick="searchButton5()">Naflahadal</button>
+            <button onclick="searchButton6()">Dhiirigalin</button>
+            <button onclick="searchButton7()">Qoraal</button>
+            <button onclick="searchButton8()">Ganacsiga</button>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="refresh">
+      <button>back</button>
+    </div>
+
+
+
+
+
+    <div class="books">
+
+        <div class="result book" id="soo doog sheeko">
+          <img src="books/soo doog.jpg" alt="Book 1" onclick="openModal('books/soo doog.jpg', 'Soo Soog', 'Cabdulqaadir Diiriye', 'Waa sheeko faneed la magacbaxday SOO DOOG oo uu qoray Cabdulqaadir Diiriye, waa sheeko ku wareegaysa nolosha shan qoys, shantaas oo u taagan nolosha soomaalida. Waa sheeko faneed ka warramaysa tagtada iyo taaganta soomaalida,waxay gudbinaysaa farriin murti iyo xikmadi ay ku ladhan tahay. Waana sheeko wax badan ka tilmaamaysa xaaladdii burburka Soomaaliya iyo noloshii la soo maray', 'PDF/Soodoog.pdf')">
+          
+            <div class="title-date">
+                <h1>Soo Doog</h1>
+                <p>20xx</p>
+            </div>
+
+        </div>
+        <div class="result book" id="waanku salmay saaxiib naf-la-hadal naf la hadal">
+          <img src="books/waanku salamay saaxiib.jpg" alt="Book 2" onclick="openModal('books/waanku salamay saaxiib.jpg','Waan Ku Salaamay Saaxiib', 'Adham Sharqaawi   W/T:Aadan Sahan', 'Waan Ku Salaamay Saaxiib waxa qoray Adham Sharqaawi, waxa tarjumay Aadan Sahan. Waan buug naf-la-hadal ah, wuxuu daawo u noqonayaa qalbiyo dhaawacan, wuxuu dawo u noqon dad badan oo noloshu ka adkaatay, dhallin badan ayuuna fahanka nolosha u saxayaa.', 'PDF/wanku salaamay saaxib.pdf')">
+          <div class="title-date">
+            <h1>Waan Ku Salaamay Saaxiib</h1>
+            <p>20xx</p>
+        </div>
+        </div>
+
+
+        <div class="result book" id="Dhaymo sheeko dhiirigalin">
+            <img src="books/Dhaymo.jpg" alt="Book 1" onclick="openModal('books/Dhaymo.jpg', 'Soo Soog', 'Zakariye Haaruuni', 'Buug Yarahaan waa Buug Ka Hadlaya Aafooyinka Iyo Badi Xannuunada Qalbiga Ku Dhaca , Ee Keena Qofka Inuu noqdo mid dhunsan oo maahsan kana Moogan garashada xaqa iyo u - Garaabida Xaqiiiqda ', 'PDF/DHAYMO.pdf')">
+            
+              <div class="title-date">
+                  <h1>Soo Doog</h1>
+                  <p>20xx</p>
+              </div>
+  
+          </div>
+          <div class="result book" id="Naftaydaay Gacalo naf la hadal naf-la-hadal">
+            <img src="books/Naftaydaay Gacalo.jpg" alt="Book 2" onclick="openModal('books/Naftaydaay Gacalo.jpg','Naftaydaay Gacalo', 'Cula Dayuub__ W/T: Maxamed Qaamuus', 'Buugaan “NAFTAYDAAY GACALO” waa buug laga soo turjumay buugga ay af Ingiriisi ku qortay Cula Dayuub ee “Dear Me”,  taas oo ah Suuriyaanad afaf dhawr ah wax ku qorta, kuna saabsan mawaadiicda la xidhiidha Hormarinta Nafta,Buuggan waxa af Soomaali inoogu soo turjumay Mohamed Qaamuus,waana buug naf-la-hadal ah oo si fudud, misana xeeldheer, u la sheekaysanaya nafta, habab toganna u dhiirrigelinaya. Waa buug u habaysan si ka duwan sidii lagu bartay buugta dhiirrigelinta ah, jiilal kale da’ ahna anfacaya. Waa buug fudad, nafta ula hadlaya una hagaya sida ugu debecsan; waa buug macaan oo aanad ku caajisaynin; aadna u kooban.', 'PDF/Naftaydaay Gacalo.pdf')">
+            <div class="title-date">
+              <h1>Naftaydaay Gacalo</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          <div class="result book" id="Rag iyo Rabbi sheeko taariikh">
+            <img src="books/rag iyo rabi.jpg" alt="Book 1" onclick="openModal('books/rag iyo rabi.jpg', 'Rag iyo Rabi', ':Awais A .ALI', 'Marka Xooga Iyo Awooda Yarta Ah  ee La Siiyey Qofka Ay Ku Jiheyso Kibir Iyo Is Qaad  been ah Waxa Kaliya ee xasuusin kara  Xadkiiisa Waa Suuugaanta. Soomaalidu  wax ma qorto waxna ma akhriso; Soomaalidu waa oral society Waxa Kaliya ee ay ku wada Xariiri karaan waqti xaadirkaan waa Suugaanta .Buugaan Waa Suugaan Xul ah oo ku saabsan nabada iyo dib u heshiisiinta .Maantana Wax aan ugu baahi badannahay Waa Nabad. Nabad la.aani waa nolol la.aan.', 'PDF/RAG_IYO_RABBI.pdf')">
+            
+              <div class="title-date">
+                  <h1>Rag iyo Rabbi</h1>
+                  <p>20xx</p>
+              </div>
+  
+          </div>
+          <div class="result book" id="taariikhda somalia taariikh">
+            <img src="books/ts.jpg" alt="Book 2" onclick="openModal('books/ts.jpg','Taariikhda Dalka', 'Author 2', '   Buuggaan waxaa qoray  Abdinaasir AliYalaxoow waxa uu  buuggan ugu tala galay dhamaan cidkasta oo u baahan in ay aqrisato taariiqda dalkeena soomaalia. Sidoo kale cidkasta oo danaynaysa inay ogaato in uu dalkeenu leeyahay taariiq fac weyn leh', 'ts.pdf')">
+            <div class="title-date">
+              <h1>Taariikhda Dalka </h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+          <div class="result book" id="Garbaduubkii Gumaysiga taariikh">
+            <img src="books/garba duubkii guumaysiga.jpg" alt="Book 2" onclick="openModal('books/garba duubkii guumaysiga.jpg','Garbaduubkii Gumaysiga', 'Faarax Maxamed J Cawl.', ' Inkasta oo buuggani u qoran yahay sidii hab sheeko weriso ah, haddana waxay dulucdiisu tahay, ama uu ka warbixinayaa taariikhda ummadda Soomaaliyeed. Sida ka muuqatana, magaciisa ah «Garbaduubkii Gumeysiga» wuxuu gaur ahaan uga warramayaa dhibaatooyinka gumeysigu gaarsiiyey Ummadda Soomaaliyeed.  ', 'PDF/t.pdf')">
+            <div class="title-date">
+              <h1>Garbaduubkii Gumaysiga</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+          <div class="result book" id="10 magac Islamic">
+            <img src="books/10 magac.jpg" alt="Book 2" onclick="openModal('books/10 magac.jpg','10 magac', 'Cali Jaabir Alfiifi..', ' Buuggan wuxuu sharaxayaana 10 magac oo ka mid ah magacyada Alle iyo sifooyinka ay u taagan yihiin iyo sidoo kale faa.iidada ku jirta tobankaas magac. Kuwani waa weedho ku saabsan qaybo ka mid ah magacyada ilaahay. Waxaan isku hawlay in uu fahmo buuggan qofka uu ogaalkiisu dhexdhexaadka yahay, ka buka ee sarirta jiifa, ka murugaysan ee illintu ka qubanayso, iyo ka baahan ee ay duruufuhu ragaadiyeen. Waxa hubaal ah qalbiga oo ku xidhma, barta, iska jira, jeclaada, ka baqa isla markaana fisha Ilaahay SWT, sida uu yahay sirta libaanta aakhiro, si la mid ah in uu u yahay sirta badhaadhaha iyo barwaaqada ifkan  ', 'PDF/10 MAGAC.pdf')">
+            <div class="title-date">
+              <h1>10 magac</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          <div class="result book" id="Ammane sheeko taariikh">
+            <img src="books/aamane.jpg" alt="Book 2" onclick="openModal('books/aamane.jpg','Ammane', 'Maxamed Shariif', ' no info  ', 'PDF/Ammane.pdf')">
+            <div class="title-date">
+              <h1>Ammane</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          <div class="result book" id="hadii dhalinyaranimada dhalinyaronimo sheeko taariikh dhiirigalin">
+            <img src="books/hadii dhalin.jpg" alt="Book 2" onclick="openModal('books/hadii dhalin.jpg','Haddii dhalinyaranimada la ii celin lahaa maalin uun', 'Ascad Dhaaha', ' Ascad Dhaaha, waa qoraa, filin-sameeye, iyo wariye. Waxa uu ka soo shaqeeyay warbaahinno kala duwan oo ay Aljazeera ka mid tahay, asiga oo sagaashameeyadii warbaxinno dokomentriyo ah kaga sameyn jiray dalalka ay colaaddu ka taagneed, sida; Yugoslavia, Chechnya, Congo iyo Soomaaliya oo uu 1998dii imid kana sameeyay dokomenteri ku lifaaqnaa taxanaha نقطة ساخنة ee Aljazeera. Ascad, bisha febraayo ee sanadkaan ayuu 67 sano jirsaday. Waxa uuna baahiyay maqaal uu kaga hadlaayo; Haddii dhallinyaranimada loo soo celin lahaa waxa uu samayn lahaa ee uu hadda tabaayo. Wuxuu ka warramayaa waayo-aragnimo dhalinyaro badan oo inminka nool anfici doonta. Maqaalka waxa wada tarjumay Axmed Dhuuboow iyo Cabdiraxmaan Caqiil. Waxa baahisay mareegta Raadreeb:  ', 'PDF/haddii dhalinyarnimada la iisoo celin lahaa -Ascad Daha.pdf')">
+            <div class="title-date">
+              <h1>Dhalinyaranimo</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          <div class="result book" id="Cawaddaran sheeko">
+            <img src="books/Cawaddaran.jpg" alt="Book 2" onclick="openModal('books/Cawaddaran.jpg','Cawaddaran', 'Naasir Cali.', ' Sheekadan waxaaan ugu talagalay in aan ku hogatusaaleeyo kuna baraarujiyo marxalado dhawr ah oo dul hoganaya shaqsiga Soomaaliga ah. Gaar ahaan da.yarta ku guda jirta wakhtigii shukaansiga. Run aan lala gabban loona badheedhin ayay si falsafadaysan idiin taqabalsiinaysaa. Xidhiidho bilowgooda lagu naaleeday dhammaadkoodiina wadnabbaab iyo geeri laga taransaday ayaad muddo akhrinteeda ku raaxaysan Qoraaga.  ', 'PDF/CAWADDARAN.pdf')">
+            <div class="title-date">
+              <h1>Cawaddaran</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          
+          <div class="result book" id="wahsi tire Dhiirigalin">
+            <img src="books/wahsi tire.jpg" alt="Book 2" onclick="openModal('books/wahsi tire.jpg','Wahsi Tire', 'Cabdiraxmaan Bashiir Siyaad.', '  Buugyare kaa caawinaya sida aad uga guulaysan lahayd wahsiga iyo caajiska Waqtigaagana aad uga faa.iideysan lahayd.', 'PDF/Wahsi Tire.pdf')">
+            <div class="title-date">
+              <h1>Wahsi Tire</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+          
+          <div class="result book" id="Furaha Ganacsiga ganacsi">
+            <img src="books/Furaha Ganacsiga.jpg" alt="Book 2" onclick="openModal('books/Furaha Ganacsiga.jpg', 'Furaha Ganacsiga', ' Siciid Cali Shire.', ' Buugani Wuxuu kahadlayaa bilaabista, badbaadinta iyo kobcinta ganacsiyada yaryar, waana buug wata aqoon mug leh oo ku saabsan; hal abuurnimada iyo hababka ganacsiga loo kobciyo iyo xaaladaha ganacsiyada soomaliyada. Wuxuu ka koobanyahay saddax qeybood, oo mid waliba dhowr cutub soo hoos imaanaya. Waxyaabaha kale ee uu buuga kahadlayo waxaa kamid ah soomaalida iyo gancsiga,  inkastoo aysan jirin waqti sugan oo soomalidu ganacsiga bilowday, hadana qoraaga waxa uu ukala qeybinaa saddax qeybood. Wuxuu kahadlayaa noocyada sababaha dadka ku keena bilowista ganacsiga. Wuxuu kaloo kahadli hal,abuurnimada iyo Ikhtiraaca ,taaso hal,abuurnimada ku sheegayo awooda soo shaac bixida wax cusub ama fikrad cusub waliba xiliga dhibta, sidookale waxa uu hal,abuurnimada ku qeexaya in ay tahay hilinka shirikaad ka gaarsiiya natiijo cusub, waxa uu sidookale kahadlaa waxyaabaha hortaagan hal,abuurnimada iyo sida ganacsi loo abuuro. ', 'PDF/.pdf')">
+            <div class="title-date">
+              <h1>Furaha Ganacsiga</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+                
+          <div class="result book" id="Dhambaallada Quraanka Islamic">
+            <img src="books/Dhambaallada Quraanka.jpg" alt="Book 2" onclick="openModal('books/Dhambaallada Quraanka.jpg','Dhambaallada Quraanka', 'Ad.ham Sharqaawi. W/T Cabdulxakiim Muxammad Obsiiye', ' Buuggu wuxuu kamid yahay buugta soo dhawaynaha fahanka macaanida quraanka, wuxuu isku xidhayaa Quraanka iyo noloshaada gaarka ah, wuxuu soo gudbinayaa murtidii, miiddii iyo aqoontii dadkii hore ee wanaagsanaa. Waa buug xambaarsan fariimo xeeldheer oo qoraagu ka dheegtay Quraanka, wuxuuna tilmaami casharo nololeed oo anfacaya nafta iyo bulshada. Mana aha tafsiir aayado quraan ah micnaynaya ama kalmad iyo macneheed laysa saarayo, wuxuu buugu soo qaadaya aayado ama qayb kamid ah aayad kadibna wuxuu kasoo saari casharo nololeed iyo talooyin isbeddel dhab ah nolosha qofka ku samaynaya toosna u taabanaya qalbiga. Mana aha buug isku xidhan bog walba na gaarkiis ayuu u taagan tahay. Muddada aad aqrinta buugga ku dhex jirto waxaad ku raaxaysan fahanka iyo dhuuxida macnaha aayadaha Quraanka kariimka ah. ', 'PDF/.pdf')">
+            <div class="title-date">
+              <h1>Dhambaallada Quraanka</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+          <div class="result book" id="Iigu Yeedh Maraykan call me american sheeko">
+            <img src="books/Iigu Yeedh Maraykan.jpg" alt="Book 2" onclick="openModal('books/Iigu Yeedh Maraykan.jpg','Iigu Yeedh Maraykan', ' Cabdi Nuur Iftin  W/T: Cabdiraxmaan Umal.', ' Buugga ‘Iigu Yeedh Maraykan’ oo laga soo turjumay buugga ‘Call me American’ kaas oo uu qoray Cabdi Nuur Iftin maaha buug cilmiyeed, mana ah sheeko-faneed, balse waa xusuusqor. Xusuusqorku keliya maaha qof noloshiisa inaynu wax ka ogaano, ee waxa inoogu lamaan dhacdo taariikheedyadii wakhtigaas dhacay, habnololeedkii bulshadii kala duwanayd ee uu la noolaa iyo xaalado baddan oo jirey oo aynaan goobjoog ka ahayn, oo lagu dareensiinayo--iyadoo goobtii hawshu ka dhacday lagu geynayo. Waa sheeko aad u xiiso badan oo Muqdisho ka dib ina gaynaysa dalal kale oo Geeska Afrika ah oo Soomaali badani qaxoonti ku yihiin. Halkaas oo ay dabadeed sheekadu uga sii tallaabayso carro Maraykan iyo dhul fog. .', 'PDF/.pdf')">
+            <div class="title-date">
+              <h1>Iigu Yeedh Maraykan</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+          <div class="result book" id="Ramadaan Yaad Noqon Salma mise hanan xannaan xanaan xanan sheeko Islamic">
+            <img src="books/Ramadaan Yaad Noqon.jpg" alt="Book 2" onclick="openModal('books/Ramadaan Yaad Noqon.jpg','Ramadaan Yaad Noqon', 'Axmed Daahir.', 'Walaashayeey Ramadaan Yaad Noqon Salma mise Xannaan..', 'PDF/RAMADAAN YAAD NOQON.pdf')">
+            <div class="title-date">
+              <h1>Ramadaan Yaad Noqon</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+               
+          <div class="result book" id="Nuun Qalin iyo Qoraal. qoraal">
+            <img src="books/Nuun.jpg" alt="Book 2" onclick="openModal('books/Nuun.jpg','Nuun Qalin iyo Qoraal.', ' Muxammad Yuusuf.', ' Waa buug waqti, maskax igo dedaal badanba uu geliyay, sannaddo badanna ururintiisu socotay. Waa Nuun oo qalinka hal-abuurkiiaa iyo wanaajintiisa iyo kor u qaadista shaqsiyadda qoraannimada iyo aqoonta afka dhigaalkiisa la xiriirtaba lagu dhiteeyay.In badan oo buuggan ka mid ahi waxay ku saabsan tahay anshaxa. Qoraalka wanaagsan kuma koobna sixitaanka higgaadda, toosinta naxwaha, iyo ereyo qurux leh oo la adeegsado. Anshaxa wanaags ani sida uu u qurxiyo qofka labbisan, ayaa uu qoraalkana u bilaa, haddii laga tagana, uu qoraalkii u foolxumaadaa. Murti badan oo Soomaaliyeed ayaa aan buuggan ku soo ururiyay si ay jidka ugu iftimiso qoraaga..', 'PDF/NUUN.pdf')">
+            <div class="title-date">
+              <h1>'Nuun' Qalin iyo Qoraal.</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+          <div class="result book" id="Sirta iyo Axkaamta Soonka Islamic">
+            <img src="books/Sirta iyo Axkaamta Soonka.jpg" alt="Book 2" onclick="openModal('books/Sirta iyo Axkaamta Soonka.jpg','Sirta iyo Axkaamta Soonka.', 'Muxammad Yuusuf..', 'No Info', 'PDF/Sirta iyo Axkaamta Soonka.pdf')">
+            <div class="title-date">
+              <h1>Sirta iyo Axkaamta Soonka</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+               
+          <div class="result book" id="Boqol Maqaal iyo Barakada Qalinka qoraal">
+            <img src="books/Boqoal qalin iyo barashada.jpg" alt="Book 2" onclick="openModal('books/Boqoal qalin iyo barashada.jpg','Boqol Maqaal iyo Barakada Qalinka', 'Cabdullaahi Maxamed Cawsey.',     '  Akhristuhu wuxuu buuggan ugu tagi doonaa 5 cutub oo kala madax bannaan. Cutubka 1.aad waxaa lagu uruurriyay maqaallo la qoray waqtiyo kala duwan balse ku midoobay dallada falsafadda iyo fahamka cilmigacasriga ah ee sayniska. cutubka 2.aad waxaa loo gaaryeelay maqaallo muujiyana qiimaha caqliga iyo dhaxalka cilmi nafsiga! Cutubka 3add waxaa ku bahoobay maqaallo ku abtirsada bahweynta cilmiga bulshada iyo siyaasadda Soomaaliya. Cutubka 4aad waxaa isku bahaystay maqaallo u taagan difaaca diinta islaamka iyo fahamka fudud ee nolosha. Ugu danbaynti, cutubka 5.aad ee buugga wuxuu ka hadlayaa maqaalo muujinaya quruxda iyo xikmadda nolosha! Ujeeddada ugu weyn ee buuggan waa in akhristaha sharafta leh uu helo buug ay ku uruursanyihiin mawaadic kala duwan oo maskaxda fakeraysa ku jimicsan karto marka ay ku caajisto mashquulka iyo maalayacniga nolosha.   ', 'PDF/Boqol_Qalin_iyo_Barakada_Qalinka.pdf')">
+            <div class="title-date">
+              <h1>Boqol Maqaal iyo Barakada Qalinka</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+          <div class="result book" id="TATAAR taariikh">
+            <img src="books/TATAAR.jpg" alt="Book 2" onclick="openModal('books/TATAAR.jpg','TATAAR', 'Unknown.', '  Waa buug ka warramaya taariikhdii tataarka bilaw ilaa Caynu-jaaluut..', 'PDF/TATAAR.pdf')">
+            <div class="title-date">
+              <h1>TATAAR</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+          <div class="result book" id="Guure taariikh">
+            <img src="books/guure.jpg" alt="Book 2" onclick="openModal('books/guure.jpg','Guure', 'xasan qorane',   ' Qoraagu wuxuu dhiganahan qorayay muddo 2sano ah,wuxuuna ka hadlayaa halgankii soomaalida waagii gumaystaha,wuxuu kaloo ka hadlayaa oo uu lafa gurayaa dagaalkii 1977  kii.Buuggan wuxuu ka hadlayaa oo soo koobayaa dhacdo walba oo dhulka soomaaliyeed ka dhacday 1968 ilaa 2000.Buuggan wuxuu xusuus qor u yahay qofwalba oo soomaali ah. .', 'PDF/Guure..pdf')">
+            <div class="title-date">
+              <h1>Guure</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+               
+          <div class="result book" id="hal aan tabayey">
+            <img src="books/Hal aan tabayay.jpg" alt="Book 2" onclick="openModal('books/Hal aan tabayay.jpg','hal aan tabayey', 'maxamed baashe.', ' Dhiganahan waa dhigane taariikheed ama dhigane suugaaneed. Waxa ku qoran suugaantii iyo taariikhdii Abwaan/halgamaa: Xaaji Aadan Afqalooc. .', 'PDF/hal aan tabayey.pdf')">
+            <div class="title-date">
+              <h1>hal aan tabayey</h1>
+              <p>20xx</p>
+          </div>
+          </div>
+
+
+
+
+
+
+<!--           
+          <div class="result book" id="wahsi tire">
+            <img src="books/wahsi tire.jpg" alt="Book 2" onclick="openModal('books/wahsi tire.jpg','Book Name', 'AUTHOR.', '  .', 'PDF/.pdf')">
+            <div class="title-date">
+              <h1>Cawaddaran</h1>
+              <p>20xx</p>
+          </div>
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+          <div id="noResults">
+            <img src="./no.png" alt="">
+            <p>Waan ka Xunanahay Buuga Aad dalbatay Lama Heli Karo!</p>
+          </div>
+
+
+        <!-- Add more book entries as needed -->
+      </div>
+
+
+<!-- 
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-author"></p>
+          <p id="modal-description"></p>
+          <div class="buttons">
+            <a id="download-button" href="#" target="_blank">Download PDF</a>
+            <button id="view-button" onclick="viewPDF()">View PDF</button>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <span class="back" onclick="closeModal()"> &#171; Back</span>
+        
+          <div class="modal-image">
+            <img id="modal-image" src="" alt="Book Image">
+          </div>
+          
+
+            <div class="right">
+                <div class="book-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-author"></p>
+                    <p id="modal-description"></p>
+                </div>
+
+                <div class="buttons">
+                    <a id="download-button" href="#" target="_blank">Download PDF</a>
+                    <button id="view-button" onclick="viewPDF()">View PDF</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+  
+
+
+
+
+
+
+
+</body>
+</html>
